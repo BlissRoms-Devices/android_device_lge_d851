@@ -46,15 +46,3 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bc
 
 # common g3
 $(call inherit-product, device/lge/g3-common/g3.mk)
-
-# BlissPop Config Flags
-BLISSIFY := true
-BLISS_O3 := true
-BLISS_STRICT := true
-BLISS_GRAPHITE := true
-BLISS_KRAIT := true
-Bliss_Build_Block := 1
-TARGET_TC_ROM :=4.9-sm
-TARGET_TC_KERNEL :=4.9-sm
-TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
